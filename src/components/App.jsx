@@ -50,11 +50,11 @@ export function App() {
     searchContact(name)
       ? alert(`${name} already exists`)
       : dispatch(
-          createContact({
-            name: name,
-            phoneNumber: phoneNumber,
-          })
-        );
+        createContact({
+          name: name,
+          phoneNumber: phoneNumber,
+        })
+      );
 
     event.target.reset();
   };
